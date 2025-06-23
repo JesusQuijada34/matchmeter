@@ -1,77 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de Amor</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MatchMeter 💖</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1 class="neon-text">VERIFICADOR <span class="flicker">DE AMOR</span></h1>
-            <p class="subtitle">Descubre tu compatibilidad</p>
-        </div>
-
-        <div class="card glow">
-            <form id="loveForm">
-                <div class="form-group">
-                    <label for="person1" class="neon-label">Nombre Persona 1</label>
-                    <input type="text" id="person1" class="neon-input" placeholder="Tu nombre" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="person2" class="neon-label">Nombre Persona 2</label>
-                    <input type="text" id="person2" class="neon-input" placeholder="Nombre de tu pareja" required>
-                </div>
-
-                <div class="heart-container">
-                    <div class="heart">
-                        <div class="heart-fill" id="heartFill"></div>
-                        <div class="percentage" id="percentage">0%</div>
-                    </div>
-                </div>
-
-                <button type="button" id="checkBtn" class="neon-button">
-                    <span class="btn-text">VERIFICAR COMPATIBILIDAD</span>
-                    <span class="btn-glow"></span>
-                </button>
-            </form>
-        </div>
-
-        <div id="loader" class="loader hidden">
-            <div class="spinner"></div>
-            <p class="loading-text">Analizando compatibilidad...</p>
-        </div>
-
-        <div id="resultContainer" class="result-container hidden">
-            <div id="resultCard" class="result-card">
-                <h2 id="resultTitle" class="result-title"></h2>
-                <p id="resultMessage" class="result-message"></p>
-                
-                <div class="compatibility-info">
-                    <div class="info-row">
-                        <span>Compatibilidad:</span>
-                        <span id="compatibilityValue" class="info-value">0%</span>
-                    </div>
-                    <div class="info-row">
-                        <span>Puntos fuertes:</span>
-                        <span id="strengths" class="info-value">-</span>
-                    </div>
-                    <div class="info-row">
-                        <span>Consejo:</span>
-                        <span id="advice" class="info-value">-</span>
-                    </div>
-                </div>
-
-                <button id="closeBtn" class="neon-button small">
-                    <span class="btn-text">PROBAR DE NUEVO</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <script src="js/script.js"></script>
+  <div class="container">
+    <h1>💖 MatchMeter 💖</h1>
+    <form id="matchForm">
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="text" placeholder="Nombre de tu amor" required />
+      <button type="submit">Verificar Compatibilidad</button>
+    </form>
+    <div id="resultado"></div>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
