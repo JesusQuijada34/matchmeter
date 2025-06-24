@@ -21,7 +21,7 @@ form.addEventListener("submit", function (e) {
     mensaje = "Flechazo dudoso";
     emoji = "💔🤷";
   } else {
-    mensaje = "Mejor como amigos";
+    mensaje = "Por lo menos se estan conociendo";
     emoji = "😅🚫";
   }
 
