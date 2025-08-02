@@ -10,18 +10,33 @@ form.addEventListener("submit", function (e) {
   let emoji = "";
   if (porcentaje >= 90) {
     mensaje = "¡Almas gemelas!";
-    emoji = "💘💍💑";
+    emoji = "💍💑";
+  } else if (porcentaje >= 80) {
+    mensaje = "Flechados!";
+    emoji = "🎯🌀";
   } else if (porcentaje >= 70) {
-    mensaje = "Alta compatibilidad";
-    emoji = "❤️💫";
+    mensaje = "Un alma cerca tuyo";
+    emoji = "👻🌊";
+  } else if (porcentaje >= 60) {
+    mensaje = "Pareja perfecta";
+    emoji = "👥💕";
   } else if (porcentaje >= 50) {
-    mensaje = "Conexión posible";
+    mensaje = "Mejores amigos";
+    emoji = "❤️💫";
+  } else if (porcentaje >= 40) {
+    mensaje = "Son amigos";
     emoji = "💞✨";
   } else if (porcentaje >= 30) {
-    mensaje = "Flechazo dudoso";
+    mensaje = "Es algo infiel";
+    emoji = "👎🧐";
+  } else if (porcentaje >= 20) {
+    mensaje = "Aquella persona tiene pareja";
+    emoji = "🐺🔮";
+  } else if (porcentaje >= 10) {
+    mensaje = "Encontré infidelidad";
     emoji = "💔🤷";
   } else {
-    mensaje = "Por lo menos se conocen perfectamente";
+    mensaje = "Nada que ver";
     emoji = "😅🚫";
   }
 

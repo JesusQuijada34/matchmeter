@@ -1,0 +1,4 @@
+#!usr/bin/sh
+pip install -r "./lib/requirements.txt"
+clear
+/usr/bin/python3 "./matchmeter.py"
