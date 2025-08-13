@@ -1,1 +1,2 @@
 # Dependencias del paquete
+PyQt5
