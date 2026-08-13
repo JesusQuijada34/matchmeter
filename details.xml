@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <app>
-  <publisher>Influent</publisher>
+  <publisher>influent</publisher>
   <app>matchmeter</app>
   <name>Matchmeter</name>
-  <version>v1.0-26.08-21.56-AlphaCube</version>
-  <correlationid>5cc7107489073e2337a7cbfbac808d9ca5f11b1a44e80e03378387341a94eb87</correlationid>
+  <version>v1.0-26.08-21.56</version>
+  <correlationid>e3011fba3092267ae49a89e2c3670b7bb5d1026bdb2f72ad70a985bd6a956e9a</correlationid>
   <rate>Todas las edades</rate>
   <author>JesusQuijada34</author>
   <platform>AlphaCube</platform>
