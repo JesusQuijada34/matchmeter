@@ -1,9 +1,9 @@
 import sys
 import random
-from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
+from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                             QLabel, QLineEdit, QPushButton, QFrame)
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QFont, QIcon, QPalette, QColor, QLinearGradient, QBrush
+from PyQt6.QtCore import Qt
+from PyQt6.QtGui import QFont, QIcon, QPalette, QColor, QLinearGradient, QBrush
 icon = "app/app-icon.ico"
 class MatchMeterApp(QMainWindow):
     def __init__(self):
@@ -32,7 +32,7 @@ class MatchMeterApp(QMainWindow):
 
         # Title
         self.title = QLabel("💖 MatchMeter 💖")
-        self.title.setAlignment(Qt.AlignCenter)
+        self.title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.title.setObjectName("titleLabel")
 
         # Input fields
@@ -58,12 +58,12 @@ class MatchMeterApp(QMainWindow):
 
         self.result_label = QLabel()
         self.result_label.setWordWrap(True)
-        self.result_label.setAlignment(Qt.AlignCenter)
+        self.result_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.result_label.setObjectName("resultLabel")
 
         self.advice_label = QLabel()
         self.advice_label.setWordWrap(True)
-        self.advice_label.setAlignment(Qt.AlignCenter)
+        self.advice_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.advice_label.setObjectName("adviceLabel")
 
         self.result_layout.addWidget(self.result_label)
@@ -90,7 +90,7 @@ class MatchMeterApp(QMainWindow):
         gradient.setColorAt(1, QColor(255, 150, 200))  # Medium pink
 
         palette = self.palette()
-        palette.setBrush(QPalette.Window, QBrush(gradient))
+        palette.setBrush(QPalette.ColorRole.Window, QBrush(gradient))
         self.setPalette(palette)
 
         # Apply stylesheet
@@ -230,7 +230,7 @@ class MatchMeterApp(QMainWindow):
         gradient.setColorAt(1, QColor(255, 150, 200))
 
         palette = self.palette()
-        palette.setBrush(QPalette.Window, QBrush(gradient))
+        palette.setBrush(QPalette.ColorRole.Window, QBrush(gradient))
         self.setPalette(palette)
         super().resizeEvent(event)
 
@@ -243,4 +243,4 @@ if __name__ == "__main__":
 
     window = MatchMeterApp()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

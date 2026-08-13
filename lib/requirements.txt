@@ -1,2 +1,2 @@
-# Dependencias del paquete
-PyQt5
+# Dependencias de MatchMeter
+PyQt6>=6.5,<7

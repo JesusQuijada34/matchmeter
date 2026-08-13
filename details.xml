@@ -1,1 +1,13 @@
-<app><publisher>influent</publisher><app>matchmeter</app><name>Matchmeter</name><version>v1-25.08-13.05-danenone</version><with>linux</with><danenone>25.08-13.06</danenone><correlationid>6bff73f9491a019a6863f7832a018ca0371373fda92d48fe736f23ff554447cc</correlationid><rate>Todas las edades</rate></app>
+<?xml version="1.0" encoding="UTF-8"?>
+<app>
+  <publisher>Influent</publisher>
+  <app>matchmeter</app>
+  <name>Matchmeter</name>
+  <version>v1.0-26.08-23.43-AlphaCube</version>
+  <correlationid>00fb476b0329054670b1b430070c8bbe8b1dcb18247397259826ced867f48b5e</correlationid>
+  <rate>Todas las edades</rate>
+  <author>JesusQuijada34</author>
+  <platform>AlphaCube</platform>
+  <description>Aplicación GUI PyQt6 portable para calcular una compatibilidad recreativa entre dos nombres.</description>
+  <year>2026</year>
+</app>
